@@ -7,7 +7,7 @@ use yii\base\ArrayAccessTrait;
 class EventArgument implements \IteratorAggregate, \Countable, \ArrayAccess, \JsonSerializable
 {
     use ArrayAccessTrait;
-    
+
     /**
      * Event sender (e.g. Controller)
      *
@@ -66,7 +66,7 @@ class EventArgument implements \IteratorAggregate, \Countable, \ArrayAccess, \Js
         return $this->results;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return $this->data;
     }

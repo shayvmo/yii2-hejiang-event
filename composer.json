@@ -3,7 +3,7 @@
     "description": "A event dispatcher for plugin system, make event mounting / dispatching easily.",
     "type": "library",
     "require": {
-        "php": ">=5.4",
+        "php": ">=7.0",
         "yiisoft/yii2": "^2.0",
         "evenement/evenement": "^2.0"
     },
